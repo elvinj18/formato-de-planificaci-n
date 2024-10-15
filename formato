@@ -1,0 +1,36 @@
+data = {
+    "Cronograma": ["Semana 1-2", "Semana 3-4", "Semana 5"],
+    "Objetivos": [
+        "Conocer los conceptos básicos de geografía y su relación con el medio ambiente",
+        "Analizar las principales civilizaciones antiguas y su legado cultural",
+        "Comprender el uso de los recursos naturales y su impacto en la sostenibilidad"
+    ],
+    "Contenidos": [
+        "Geografía y Medio ambiente, El impacto del ser humano en el M.A.",
+        "Las civilizaciones antiguas, Las aportaciones al mundo moderno",
+        "Recursos renovables y no renovables, Sostenibilidad y desarrollo"
+    ],
+    "Numero Horas": ["10h", "10h", "10h"],
+    "Estrategias Metodológicas": [
+        "Clases interactivas con el uso de mapas y gráficos",
+        "Trabajos en grupo para el análisis de textos históricos",
+        "Debates sobre la sostenibilidad económica y desarrollo sostenible"
+    ],
+    "Recursos": [
+        "Mapas mundiales, Documentos sobre el tema",
+        "Textos o documentos históricos y biografías de personajes relevantes",
+        "Artículos y noticias actuales sobre temas de ciudadanía y sostenibilidad"
+    ],
+    "Bibliografía": [
+        "Geografía Universal: Editorial Santillana",
+        "Civilizaciones Antiguas: Editorial SM",
+        "Recursos Naturales y Economía: Documentos en línea"
+    ],
+    "Evaluación": ["", "", ""]
+}
+
+# Convertir los datos en un DataFrame
+df = pd.DataFrame(data)
+
+# Mostrar el DataFrame al usuario
+import ace_tools as tools; tools.display_dataframe_to_user(name="Formato de Planificación", dataframe=df)
